@@ -7,7 +7,7 @@ define("IS_NEOS", str_contains(USER_AGENT, "NEOSSetup"));
 define("IS_AGNOS", str_contains(USER_AGENT, "AGNOSSetup"));
 define("IS_WGET", str_contains(USER_AGENT, "Wget"));
 # Use release2 if NEOS, else release3 (careful! wget assumes comma three)
-define("DEFAULT_STOCK_BRANCH", IS_NEOS ? "release2" : "release3");
+define("DEFAULT_STOCK_BRANCH", IS_NEOS ? "hkg_master" : "release3");
 
 define("WEBSITE_URL", "https://optoolfactory.tk");
 define("BASE_DIR", "/" . basename(__DIR__));
